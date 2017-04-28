@@ -8,6 +8,7 @@ import javax.swing.ImageIcon;
 /**
  *
  * @author Admin
+ * Запуск проекта. Начальные настройки.
  */
 public class App {
 
@@ -37,9 +38,9 @@ public class App {
         //myJFrame.setIconImage(image.getImage()); 
         //Image im=Toolkit.getDefaultToolkit().getImage("/src/app/icon/logo_v1.png");
         myJFrame.setIconImage(image.getImage());
-        myJFrame.setLocationRelativeTo(null);//открываем myJFrame по центру экрана
-        myJFrame.setVisible(true);
-        //new MyJFrame().setVisible(true);
+        myJFrame.setLocationRelativeTo( null);//открываем myJFrame по центру экрана
+        myJFrame.setVisible(true);              
+        //new MyJFrame().setVisible(true);  
       
         //new MyFrame().setVisible(true); 
         //Kvadrat m1 = new Kvadrat ("Kvadrat"); 

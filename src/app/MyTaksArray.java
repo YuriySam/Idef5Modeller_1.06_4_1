@@ -1316,8 +1316,8 @@ public class MyTaksArray implements CopyTo{
     }
     /**Добавим линию myLine в массив myLineArr, если линии с таким текстом начала и конца в массиве нет.
      * Если такая линия есть, увеличим параметр количества линий.
-     * @param myLineArr
-     * @param myLine 
+     * @param myLineArr массив, куда планируем добавить линию, если такой линии в нем нет
+     * @param myLine линия, которую планируем добавить в массив
      @autor 655 29.06.2016
      */
     public void uniqueMyLinePlus(ArrayList<MyLine> myLineArr, MyLine myLine){

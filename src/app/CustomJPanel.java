@@ -497,10 +497,13 @@ private static final long serialVersionUID = 1122233445678L; // Change number as
                 if ("Линия".equals(MyJFrame.getWork())) {
                     if (myProject.getMyTaksArray().findPaintEllB(event.getPoint())) {//Если мышь уже была пресед на овале и сейчас релизед на овале.
                         MyEll lineSecondEll =  myProject.getMyTaksArray().findPaintEll(event.getPoint());
-                        if (makeFirstEll != null && makeFirstEll != lineSecondEll) {//Проверки на принадлежность второй точки линии одному и тому же эллипсу. 
+                        if (makeFirstEll != null && makeFirstEll != lineSecondEll) {//Проверки на непринадлежность второй точки линии одному и тому же эллипсу. 
                             if(!myProject.getMyTaksArray().findLineText1EllText1B(lineSecondEll.getText(), makeFirstEll.getText())){//надо проверить что обратной линии нет. Иначе что-то сказать.
+                                
                                 //Создадим линию связи и сохраним ее в массиве линий отношений таксономии.
-                                myProject.getMyTaksArray().getMyLineArray().getLineArray().add(new MyLine2(makeFirstEll, lineSecondEll));
+                                //myProject.getMyTaksArray().getMyLineArray().getLineArray().add(new MyLine2(makeFirstEll, lineSecondEll));
+                                
+                                myProject.getMyTaksArray().uniqueMyLinePlus(myProject.getMyTaksArray().getMyLineArray().getLineArray(), new MyLine2(makeFirstEll, lineSecondEll));
                                 myProject.setSaving(false);//Данные Проекта могут быть изменены, Проект требует сохранения.
                             }else{
                                 JOptionPane.showMessageDialog(null," Существует отношение обратное создаваемому.");
