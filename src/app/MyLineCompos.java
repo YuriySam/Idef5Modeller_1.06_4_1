@@ -143,6 +143,7 @@ public class MyLineCompos extends MyLine{
         int npoints = 3;//Рисуем стрелочку на линии.
         g2.fillPolygon(xpoints, ypoints, npoints);//Рисуем стрелочку на линии.
         //Рисуем меточку количества отношений .
+        /*<<<<<>>> Спрячем временно
         if(myLine.getPriznakUrlAr().size()!=0){//если массив меток количества отношений не пуст
             g2.setColor(Color.MAGENTA);//установим цвет для объекта
             g2.drawString(" "+myLine.getPriznakUrlAr().size(), 
@@ -151,6 +152,8 @@ public class MyLineCompos extends MyLine{
             //вернем цвет
             g2.setColor(myLine.getColorLine());
         }
+        >>>>>>>>*/
+                
                 //g2.fillPolygon((int)myLine.getP().x,(int)myLine.getP1().x,(int)myLine.getP2().x, 6, 3);
                 //g2.draw(myLine.getLine1());
                 //g2.draw(myLine.getLine2());
