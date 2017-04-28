@@ -29,7 +29,7 @@ public class App {
      
     public static void main(String[] args) {
         name="Idef5Modeller";
-        release = "1.06_3 beta";
+        release = "1.06_5";
         licensedTo="free licensed";
         siteID=licensedTo;
         //myProjectArray  =  new <MyProject> ArrayList();
